@@ -3,8 +3,9 @@
 
 <form action="" method="POST">
     {% csrf_token %}
-    {{formulario}}
+    <table>
+    {{formulario.as_table}}
     
     <input type="submit" value="Enviar"/>
-    
+   </table> 
 <form>
